@@ -1,4 +1,3 @@
-import RoundedButton from "../Buttons/RoundedButton";
 
 export default function Header() {
   return (
@@ -12,9 +11,6 @@ export default function Header() {
             pagina 2
           </span>
         </nav>
-        <div className="container flex items-center justify-center">
-          <RoundedButton text="Aggiungi ricetta" color="primary"></RoundedButton>
-        </div>
       </div>
     </header>
   )
