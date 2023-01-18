@@ -1,4 +1,8 @@
+const { fontFamily } = require('tailwindcss/defaultTheme')
+
 /** @type {import('tailwindcss').Config} */
+
+
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -21,19 +25,30 @@ module.exports = {
         900: '#392b84',
       },
       alt: {
-        50: '#f4f6f7',
-        100: '#e2e8eb',
-        200: '#c9d3d8',
-        300: '#a3b5bd',
-        400: '#768e9a',
-        500: '#5b737f',
-        600: '#4e606c',
-        700: '#44515a',
-        800: '#3b444b',
-        900: '#363d43',
-    },       
-  },
-  extend: {},
+        '50': '#f6f6f7',
+        '100': '#e1e3e6',
+        '200': '#c3c7cc',
+        '300': '#9da3ab',
+        '400': '#787f89',
+        '500': '#5e646e',
+        '600': '#4a4e57',
+        '700': '#3e4047',
+        '800': '#34363b',
+        '900': '#18191b',
+      },
+      error: '#E81221',
+      success: '#81E052',
+      info: '#FBC850'
+    },
+    
+    extend: {
+      textColor: {
+         white: 'white'
+      },
+      fontFamily: {
+        sans: ["var(--font-sans)", ...fontFamily.sans]
+      },
+    }
   },
   plugins: [],
 };
