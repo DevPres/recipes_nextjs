@@ -1,18 +1,16 @@
-import { ButtonTypes, ThemeColor, ThemeColorVariation, ThemeElementSize } from "@/styles/theme";
 import { cva, VariantProps } from "class-variance-authority";
 import { ButtonHTMLAttributes } from "react";
 
 
 export const buttonStyles = cva(
-  'apparence-none py-2 px-4 uppercase transition hover:scale-105 focus:shadow-md font-bold', 
+  'apparence-none py-2 px-4 font-bold uppercase transition   focus:outline focus:outline-4 focus:outline-offset-2 hover:scale-105', 
   {
     variants: {
       color: {
-        primary: 'bg-primary-900 focus:shadow-primary-500  text-white',
-        alt: 'bg-alt-900 focus:shadow-alt-500  text-white',
-        outline: 'bg-transparent border-2 border-primary-800 focus:shadow-primary-500  text-primary-800 ',
-        'outline-alt': 'bg-transparent border-2 border-alt-800 focus:shadow-alt-500  text-alt-800 ',
-        error:'bg-error focus:shadow-error text-white'
+        primary: 'bg-primary-900 text-white focus:outline-primary-900',
+        alt: 'bg-alt-900 text-white focus:outline-alt-900',
+        outline: 'bg-transparent border-2 border-primary-800   text-primary-800 focus:outline-primary-900',
+        'outline-alt': 'bg-transparent border-2 border-alt-800   text-alt-800 focus:outline-alt-900',
       },
       size: {
         xs: 'w-32',
