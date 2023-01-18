@@ -46,7 +46,7 @@ module.exports = {
          white: 'white'
       },
       fontFamily: {
-        sans: ["var(--font-sans)", ...fontFamily.sans]
+        sans: ["var(--font-sourcecodepro)", ...fontFamily.sans]
       },
     }
   },
