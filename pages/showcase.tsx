@@ -1,3 +1,4 @@
+import Accordion from "@/components/Accordion";
 import Button from "@/components/Buttons/Button";
 
 export default function ShowCase() {
@@ -7,8 +8,10 @@ export default function ShowCase() {
   }
   return (
     <>
-    <div className="flex flex-col gap-x-8 gap-y-4 flex-wrap">
-        <div className="flex flex-col gap-x-8 gap-y-4 flex-wrap p-4">
+
+    <Accordion open={false} id="btns" title="Bottoni">
+      <>
+      <div className="flex flex-col gap-x-8 gap-y-4 flex-wrap p-4">
           <Button onClick={(e) => handleClick(e)} text="primary xs" color="primary"  size='xs'></Button>
           <Button onClick={(e) => handleClick(e)} text="primary sm" color="primary"  size='sm'></Button>
           <Button text="primary md" color="primary"  size='md'></Button>
@@ -27,31 +30,27 @@ export default function ShowCase() {
         </div>
 
         <div className="flex flex-col gap-x-8 gap-y-4 flex-wrap p-4">
-          <Button text="error xs" color="error"  size='xs'></Button>
-          <Button text="error sm" color="error"  size='sm'></Button>
-          <Button text="error md" color="error"  size='md'></Button>
-          <Button text="error lg" color="error"  size='lg'></Button>
-          <Button text="error xl" color="error"  size='xl'></Button>
-          <Button text="error full" color="error"  size='full'></Button>
+          <Button text="outline xs" color="outline"  size='xs'></Button>
+          <Button text="outline sm" color="outline"  size='sm'></Button>
+          <Button text="outline md" color="outline"  size='md'></Button>
+          <Button text="outline lg" color="outline"  size='lg'></Button>
+          <Button text="outline xl" color="outline"  size='xl'></Button>
+          <Button text="outline full" color="outline"  size='full'></Button>
         </div>
+        <div className="flex flex-col gap-x-8 gap-y-4 flex-wrap p-4">
+          <Button text="outline-alt xs" color="outline-alt"  size='xs'></Button>
+          <Button text="outline-alt sm" color="outline-alt"  size='sm'></Button>
+          <Button text="outline-alt md" color="outline-alt"  size='md'></Button>
+          <Button text="outline-alt lg" color="outline-alt"  size='lg'></Button>
+          <Button text="outline-alt xl" color="outline-alt"  size='xl'></Button>
+          <Button text="outline-alt full" color="outline-alt"  size='full'></Button>
+        </div>
+      </>
+        
+       
 
-        <div className="flex flex-col gap-x-8 gap-y-4 flex-wrap p-4">
-          <Button text="outline xs" color="outline"  size='xs'></Button>
-          <Button text="outline sm" color="outline"  size='sm'></Button>
-          <Button text="outline md" color="outline"  size='md'></Button>
-          <Button text="outline lg" color="outline"  size='lg'></Button>
-          <Button text="outline xl" color="outline"  size='xl'></Button>
-          <Button text="outline full" color="outline"  size='full'></Button>
-        </div>
-        <div className="flex flex-col gap-x-8 gap-y-4 flex-wrap p-4">
-          <Button text="outline xs" color="outline"  size='xs'></Button>
-          <Button text="outline sm" color="outline"  size='sm'></Button>
-          <Button text="outline md" color="outline"  size='md'></Button>
-          <Button text="outline lg" color="outline"  size='lg'></Button>
-          <Button text="outline xl" color="outline"  size='xl'></Button>
-          <Button text="outline full" color="outline"  size='full'></Button>
-        </div>
-      </div>
+    </Accordion>
+    
     
     </>
   )
