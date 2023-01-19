@@ -9,7 +9,7 @@ export default function ShowCase() {
   return (
     <>
 
-    <Accordion open={false} id="btns" title="Bottoni">
+    <Accordion open={false} id="btns" title="Buttons">
       <>
       <div className="flex flex-col gap-x-8 gap-y-4 flex-wrap p-4">
           <Button onClick={(e) => handleClick(e)} text="primary xs" color="primary"  size='xs'></Button>
