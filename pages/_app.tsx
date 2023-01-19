@@ -12,7 +12,7 @@ const sourcecodepro = Merriweather_Sans({
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
-    <div className={`${sourcecodepro.variable} font-sans bg-alt-100`}>
+    <div className={`${sourcecodepro.variable} font-sans bg-alt-100 min-h-screen`}>
       <Layout>
         <Component {...pageProps} />
       </Layout>
