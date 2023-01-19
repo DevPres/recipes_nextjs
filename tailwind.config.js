@@ -42,9 +42,12 @@ module.exports = {
     },
     
     extend: {
-      textColor: {
-         white: 'white'
-      },
+      textColor: ({ theme }) => ({
+        white: 'white',
+        black: 'black',
+        primary: theme('colors.primary[900]'),
+        alt: theme('colors.alt[900]')
+      }),
       fontFamily: {
         sans: ["var(--font-sourcecodepro)", ...fontFamily.sans]
       },
