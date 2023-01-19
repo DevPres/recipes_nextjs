@@ -9,8 +9,8 @@ export const buttonStyles = cva(
       color: {
         primary: 'bg-primary-900 text-white focus:outline-primary-900',
         alt: 'bg-alt-900 text-white focus:outline-alt-900',
-        outline: 'bg-transparent border-2 border-primary-800   text-primary-800 focus:outline-primary-900',
-        'outline-alt': 'bg-transparent border-2 border-alt-800   text-alt-800 focus:outline-alt-900',
+        outline: 'bg-transparent border-2 border-primary-800   text-primary focus:outline-primary-900',
+        'outline-alt': 'bg-transparent border-2 border-alt-800   text-alt focus:outline-alt-900',
       },
       size: {
         xs: 'w-32',
