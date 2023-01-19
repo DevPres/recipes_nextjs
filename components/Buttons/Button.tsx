@@ -3,7 +3,7 @@ import { ButtonHTMLAttributes } from "react";
 
 
 export const buttonStyles = cva(
-  'apparence-none py-2 px-4 font-bold uppercase transition   focus:outline focus:outline-4 focus:outline-offset-2 hover:scale-105', 
+  'apparence-none py-2 px-4 font-bold text-xs uppercase transition   focus:outline focus:outline-4 focus:outline-offset-2 hover:scale-y-110', 
   {
     variants: {
       color: {
