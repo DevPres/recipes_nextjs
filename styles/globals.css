@@ -2,3 +2,119 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+
+      /* fonts */
+      --font-heading: (var(--font-sourcecodepro));
+      --font-body: (var(--font-hamlet));
+   
+      /* set base values */
+      --text-base-size: 1.10em;
+      --text-scale-ratio: 1.2;
+  
+      /* type scale */
+      --text-xs: calc(1em / (var(--text-scale-ratio) * var(--text-scale-ratio)));
+      --text-sm: calc(1em / var(--text-scale-ratio));
+      --text-md: calc(1em * var(--text-scale-ratio));
+      --text-lg: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio));
+      --text-xlg: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+      --text-2xlg: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+      --text-3xlg: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+      --text-4xlg: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+      --text-5xlg: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+      --text-6xlg: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+      --text-7xlg: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+      --text-8xlg: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+      --text-9xlg: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+
+
+      
+     
+
+      /* line-height */
+      --heading-line-height: 1.1;
+      --body-line-height: 1.35;
+      /* line length */
+      --line-length: 35em;
+
+
+      /* spacing values */
+      --space-xxxs: 0.2em;
+      --space-xxs:  0.325em;
+      --space-xs:   0.45em;
+      --space-sm:   0.7em;
+      --space-md:   1.2em;
+      --space-lg:   1.95em;
+      --space-xl:   3.2em;
+      --space-xxl:  5.2em;
+      --space-xxxl: 8.45em;
+
+      /* colors */
+
+      
+
+      --white:#ffffff;
+      --gray-1:#dddcde;
+      --gray-2:#bbbbbe;
+      --gray-3:#9b9a9f;
+      --gray-4:#7b7b81;
+      --gray-5:#5e5d65;
+      --gray-6:#414049;
+      --gray-7:#272630;
+      --black: #0d0b18;
+
+      --color-error: '#E81221';
+      --color-success: '#81E052';
+      --color-warn: '#FBC850';
+  }
+
+
+  h1 {
+    @apply text-4xlg
+
+    
+  }
+  h2 {
+    @apply text-3xlg
+  }
+  h3 {
+    @apply text-2xlg
+  }
+  h4 {
+    @apply text-xlg
+  }
+  h5 {
+    @apply text-lg
+  }
+  h6 {
+    @apply text-md
+  }
+  h1, h2, h3, h4 {
+    @apply font-heading
+  }
+
+  h1, h2, h3, h4, hgroup, form legend {
+    @apply mb-xxxs;
+    @apply leading-heading
+  }
+
+  h5, h6, p {
+    @apply leading-body;
+    @apply max-w-line-length;
+  }
+
+  hgroup > h1, hgroup > h2, hgroup > h3 {
+    @apply mb-0
+  }
+  
+  hgroup > p {
+    @apply text-gray-5
+  }
+
+  button {
+    @apply font-button
+  }
+
+
+}
