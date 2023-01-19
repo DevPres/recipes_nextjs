@@ -9,7 +9,7 @@ export default function Layout({children}: Layout) {
   return (
     <>
       <Header/>
-      <main className="container-lg">
+      <main className="md:container md:mx-auto py-4">
         {children}
       </main>
     </>
